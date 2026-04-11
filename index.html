@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Candice J. Dammert | Portfolio</title>
   <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,15 +15,22 @@
 
   <!-- HEADER -->
   <header class="site-header">
-
     <div class="site-brand">
-      <img src="img/logo.png" alt="CJD Logo" class="nav-logo">
+      <img src="img/logo.jpg" class="nav-logo">
       <div>
         <p class="site-name">Candice J. Dammert</p>
         <p class="site-role">Onboarding & Process Design</p>
       </div>
     </div>
-
+  
+    <!-- BURGER -->
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  
+    <!-- NAV -->
     <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -34,15 +40,12 @@
       </ul>
     </nav>
 
-    
-You sent
-<a href="mailto:candicedammert@gmail.com?subject=Portfolio%20Enquiry" class="contact-btn">Contact</a>
+    You sent
+    <a href="mailto:candicedammert@gmail.com?subject=Portfolio%20Enquiry" class="contact-btn">Contact</a>
 
+    </nav>
   </header>
-
-  <!-- HERO -->
-  <main>
-
+<main>
     <section class="hero">
       <div class="hero-left">
         <p class="eyebrow">Portfolio</p>
@@ -106,7 +109,14 @@ You sent
     </section>
 
   </main>
-
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+  
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
 
