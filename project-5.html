@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Candice J. Dammert</title>
+  <title>Project Coming Soon | Candice J. Dammert</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- NAVBAR -->
   <header class="site-header">
+
     <div class="site-brand">
-      <img src="img/logo.jpg" alt="CJD Logo" class="nav-logo">
+      <img src="img/logo.png" alt="CJD Logo" class="nav-logo">
       <div>
         <p class="site-name">Candice J. Dammert</p>
         <p class="site-role">Onboarding &amp; Process Design</p>
@@ -32,40 +36,46 @@
       </ul>
     </nav>
 
-    <a href="mailto:candicedammert@gmail.com?subject=Portfolio%20Enquiry" class="contact-btn">Contact</a>
+    <a href="mailto:candicedammert@gmail.com" class="contact-btn">Contact</a>
+
   </header>
 
-  <section class="projects-gallery">
 
-    <a href="gamified-quiz.html" class="gallery-item">
-      <img src="img/quiz-title.jpg" alt="Gamified Quiz Experience">
-    </a>
-  
-    <a href="project-2.html" class="gallery-item">
-      <img src="img/coming-soon.jpg" alt="Project 2">
-    </a>
-  
-    <a href="project-3.html" class="gallery-item">
-      <img src="img/coming-soon.jpg" alt="Project 3">
-    </a>
-  
-    <a href="project-4.html" class="gallery-item">
-      <img src="img/coming-soon.jpg" alt="Project 4">
-    </a>
-  
-    <a href="project-5.html" class="gallery-item">
-      <img src="img/coming-soon.jpg" alt="Project 5">
-    </a>
-  
-  </section>
- 
+  <!-- MAIN -->
+  <main class="projects-page">
+
+    <section class="projects-placeholder">
+
+      <h1>Project in Progress</h1>
+
+      <p class="projects-copy">
+        This case study is currently being developed. It will showcase a structured
+        approach to designing learning and user experiences.
+      </p>
+
+      <p class="projects-copy">
+        Check back soon for a full breakdown including design decisions,
+        process, and outcomes.
+      </p>
+
+      <a href="projects.html" class="back-home-btn">← Back to Projects</a>
+
+    </section>
+
+  </main>
+
+
+  <!-- JS -->
   <script>
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.main-nav');
-  
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
+
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
   </script>
+
 </body>
 </html>

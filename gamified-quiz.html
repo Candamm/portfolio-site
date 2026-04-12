@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamified Quiz Experience | Candice J. Dammert</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===================== -->
+  <!-- NAVBAR -->
+  <!-- ===================== -->
+
+  <header class="site-header">
+
+    <div class="site-brand">
+      <img src="img/logo.jpg" alt="CJD Logo" class="nav-logo">
+      <div>
+        <p class="site-name">Candice J. Dammert</p>
+        <p class="site-role">Onboarding &amp; Process Design</p>
+      </div>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+
+    <a href="mailto:candicedammert@gmail.com?subject=Portfolio%20Enquiry" class="contact-btn">Contact</a>
+
+  </header>
+
+
+  <!-- ===================== -->
+  <!-- MAIN CONTENT -->
+  <!-- ===================== -->
+
+  <main class="project-page">
+
+    <!-- HERO -->
+    <section class="project-hero">
+      <div class="project-hero-text">
+        <p class="eyebrow">Case Study</p>
+    
+        <h1>Gamified Quiz Experience</h1>
+    
+        <p class="project-subtitle">
+          Multi-Round Interactive Event Design
+        </p>
+    
+        <p>
+          Designed a 60+ slide, multi-round interactive quiz experience for a live paid event,
+          using varied formats, multimedia, and structured pacing to sustain engagement
+          across the full session.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- OVERVIEW -->
+    <section class="project-section">
+      <h2>Overview</h2>
+      <p>
+        This project involved designing a pub quiz-style experience for adult participants in a live event setting.
+        The goal was to create an engaging, well-paced experience that maintained energy and participation throughout.
+      </p>
+    </section>
+
+
+    <!-- CHALLENGE -->
+    <section class="project-section">
+      <h2>The Challenge</h2>
+      <p>
+        Live quiz events often lose momentum when formats become repetitive. Because participants had paid to attend,
+        the experience needed to feel dynamic, varied, and worth the full duration of the event.
+      </p>
+    </section>
+
+
+    <!-- STRUCTURE -->
+    <section class="project-section">
+      <h2>Experience Structure</h2>
+      <p>
+        The quiz was designed as a multi-round experience, with each round introducing a different type of interaction
+        to maintain interest and prevent fatigue.
+      </p>
+
+      <img src="img/quiz-cycle.jpg" alt="Quiz round structure diagram" class="project-inline-image">
+    </section>
+
+
+    <!-- APPROACH -->
+    <section class="project-section">
+      <h2>Design Approach</h2>
+
+      <ul>
+        <li>Structured the event into distinct themed rounds</li>
+        <li>Varied interaction formats to maintain curiosity</li>
+        <li>Integrated visual and multimedia elements</li>
+        <li>Balanced pacing between high and low intensity moments</li>
+      </ul>
+    </section>
+
+
+    <!-- ZOOM ROUND -->
+    <section class="project-section">
+      <h2>Round Example: Zoom In</h2>
+      <p>
+        This round used close-up visual details that participants had to identify, shifting the task from recall
+        to visual inference and increasing engagement through curiosity.
+      </p>
+
+      <img src="img/quiz-zoom.jpg" alt="Zoom in round example" class="project-inline-image">
+    </section>
+
+
+    <!-- ART ROUND -->
+    <section class="project-section">
+      <h2>Round Example: Name That Painting</h2>
+      <p>
+        This round introduced cultural recognition tasks, expanding the range of challenge types and bringing
+        variety to the experience.
+      </p>
+
+      <img src="img/quiz-art.jpg" alt="Art round example" class="project-inline-image">
+    </section>
+
+
+    <!-- LOGO ROUND -->
+    <section class="project-section">
+      <h2>Round Example: Logo Recognition</h2>
+      <p>
+        Participants compared similar logos to identify the correct one, increasing difficulty through subtle differences
+        rather than simple recall.
+      </p>
+
+      <div class="project-image-grid">
+        <img src="img/quiz-logo-wall.jpg" alt="Logo wall">
+  
+      </div>
+    </section>
+
+
+    <!-- OUTCOME -->
+    <section class="project-section">
+      <h2>Outcome</h2>
+      <p>
+        The final experience maintained engagement across all rounds, combining structured flow with varied interaction
+        styles to create a lively and cohesive event.
+      </p>
+    </section>
+
+
+    <!-- BACK BUTTON -->
+    <section class="project-section">
+      <a href="projects.html" class="back-home-btn">← Back to Projects</a>
+    </section>
+
+  </main>
+
+
+  <!-- ===================== -->
+  <!-- JS -->
+  <!-- ===================== -->
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
+  </script>
+
+</body>
+</html>
